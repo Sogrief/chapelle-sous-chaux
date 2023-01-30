@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: space-around;
     background-color: white;
+    padding:toRem(10) 0;
 
     .custom-logo
     {
-        width:toRem(200);
+        width:toRem(175);
     }
 
     .site__header__menu{
