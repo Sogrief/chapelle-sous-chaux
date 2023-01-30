@@ -1,25 +1,25 @@
 @font-face {
-  src: url("../sources/fonts/agane-light.ttf");
+  src: url("../dist/sources/fonts/agane-light.ttf");
   font-family: aganeLight;
 }
 @font-face {
-  src: url("../sources/fonts/agane-semiBold.ttf");
+  src: url("../dist/sources/fonts/agane-semiBold.ttf");
   font-family: aganeSemiBold;
 }
 @font-face {
-  src: url("../sources/fonts/agane-bold.ttf");
+  src: url("../dist/sources/fonts/agane-bold.ttf");
   font-family: aganeBold;
 }
 @font-face {
-  src: url("../sources/fonts/agane-extraBold.ttf");
+  src: url("../dist/sources/fonts/agane-extraBold.ttf");
   font-family: aganeExtraBold;
 }
 @font-face {
-  src: url("../sources/fonts/monserrat-bold.ttf");
+  src: url("../dist/sources/fonts/monserrat-bold.ttf");
   font-family: monserratBold;
 }
 @font-face {
-  src: url("../sources/fonts/monserrat-medium.ttf");
+  src: url("../dist/sources/fonts/monserrat-medium.ttf");
   font-family: monserratMedium;
 }
 h1 {
@@ -27,8 +27,16 @@ h1 {
   font-family: aganeExtraBold;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.875rem;
+}
+.header .custom-logo {
+  width: 12.5rem;
+}
 .header .site__header__menu {
-  background-color: #9bc1bc;
   display: flex;
   justify-content: center;
   -moz-column-gap: 50px;
