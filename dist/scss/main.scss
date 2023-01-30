@@ -7,3 +7,9 @@
 
 //composants
 @import "components/_menu.scss";
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
