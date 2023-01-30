@@ -1,5 +1,17 @@
-$color:#154BA3;
+$vertFonce:#9bc1bc;
+$vertClair:#e6ebe0;
+$textColor:#555358;
+$rouge:#f52946;
+$rougeOrange:#ed6a5a;
 
+$base:16;
+
+$breakpoints: (
+  "phone-down": 480px,
+  "tablet-up": 768px,
+  "tablet-down": 992px,
+  "desktop": 1200px
+);
 
 @font-face {
 src: url("../sources/fonts/agane-light.ttf");
