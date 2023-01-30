@@ -10,6 +10,7 @@
     justify-content: center;
     border-radius: toRem(5);
     column-gap: 3vw;
+    row-gap: toRem(90);
 
     &__item{
         display: flex;
@@ -34,6 +35,34 @@
             padding:toRem(30);
             p{
                 @include texte();
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-down")) {
+    .actusAccueil{
+    
+        &__item{
+            width:39vw;
+    
+            img{
+                width:39vw;
+                height:39vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-up")) {
+    .actusAccueil{
+    
+        &__item{
+            width:60vw;
+    
+            img{
+                width:60vw;
+                height:60vw;
             }
         }
     }

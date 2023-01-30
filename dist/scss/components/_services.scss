@@ -1,0 +1,18 @@
+.services{
+    background-color: $vertClair;
+
+    &__section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        &__item{
+            width:toRem(300);
+            height:toRem(200);
+            background-color: white;
+    
+            img{
+                width:toRem(75);
+            }
+        }
+    }
+}

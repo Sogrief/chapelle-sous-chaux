@@ -33,7 +33,7 @@ h1, h2 {
 
 h2 {
   margin-left: 9.5vw;
-  margin: 1.875rem 0 1.875rem 9.5vw;
+  margin: 2.5rem 0 3.75rem 9.5vw;
   font-family: aganeSemiBold;
   font-size: 1.875rem;
 }
@@ -182,6 +182,7 @@ h2 {
   border-radius: 0.3125rem;
   -moz-column-gap: 3vw;
        column-gap: 3vw;
+  row-gap: 5.625rem;
 }
 .actusAccueil__item {
   display: flex;
@@ -207,6 +208,40 @@ h2 {
 .actusAccueil__item__content p {
   font-family: aganeLight;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .actusAccueil__item {
+    width: 39vw;
+  }
+  .actusAccueil__item img {
+    width: 39vw;
+    height: 39vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .actusAccueil__item {
+    width: 60vw;
+  }
+  .actusAccueil__item img {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+.services {
+  background-color: #e6ebe0;
+}
+.services__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.services__section__item {
+  width: 18.75rem;
+  height: 12.5rem;
+  background-color: white;
+}
+.services__section__item img {
+  width: 4.6875rem;
 }
 
 * {

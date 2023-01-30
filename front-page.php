@@ -6,9 +6,9 @@
 		<h2><?php echo get_bloginfo( 'description' ); ?></h2>
 	</div>
 
-	<h2>actualités</h2>
+<h2>actualités</h2>
 
-	<div class="actusAccueil">
+<div class="actusAccueil">
 
 <?php 
 $args = array(
@@ -39,5 +39,9 @@ endif;
 ?>
 
 </div>
+
+<h2>agenda</h2>
+
+<?php get_template_part( 'template-parts/services'); ?>
 	
 <?php get_footer(); ?>
