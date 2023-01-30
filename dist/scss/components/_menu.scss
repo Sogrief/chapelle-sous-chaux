@@ -24,11 +24,21 @@
             li{
                 font-family:Arial, Helvetica, sans-serif;
                 font-size:toRem(17);
+                padding:toRem(15) toRem(10);
+                border:1px solid #e8e8e8;
 
                 a{
-                    color:$textColor;
+                    color:$rouge;
                     text-decoration:none;
                 }
+            }
+
+            li:hover{
+                a{
+                    color: $vertFonce;
+                }
+
+                cursor:pointer;
             }
         }
     }
