@@ -21,14 +21,14 @@ function chapelle_register_assets() {
 
 	wp_enqueue_style( 
 	  'chapelle', 
-	  get_template_directory_uri() . '/dist/css/main.css',
+	  get_template_directory_uri() . '/css/main.css',
 	  array(), 
 	  '1.0'
 	);
   
 	wp_enqueue_script( 
 	  'chapelle', 
-	  get_template_directory_uri() . '/dist/js/script.js', 
+	  get_template_directory_uri() . '/js/script.js', 
 	  array(), 
 	  '1.0', 
 	  true
