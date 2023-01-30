@@ -1,0 +1,17 @@
+.wp-block-button{
+    background-color: $rougeOrange;
+    border:none;
+    border-radius:toRem(3);
+    padding:toRem(10);
+    font-family: monserratMedium;
+
+    a{
+        text-decoration: none;
+        color:white;
+    }
+
+    &:hover{
+        background-color: $vertFonce;
+        cursor: pointer;
+    }
+}

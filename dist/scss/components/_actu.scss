@@ -3,3 +3,38 @@
     flex-direction: column;
     @include texte();
 }
+
+.actusAccueil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: toRem(5);
+    column-gap: 3vw;
+
+    &__item{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        width:25vw;
+        color:$textColor;
+        background-color: $vertClair;
+
+        img{
+            width:25vw;
+            height:25vw;
+            object-fit: cover;
+        }
+        
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            row-gap: toRem(12);
+
+            padding:toRem(30);
+            p{
+                @include texte();
+            }
+        }
+    }
+}
