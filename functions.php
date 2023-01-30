@@ -10,3 +10,24 @@ register_nav_menus( array(
 	'main' => 'Menu Principal',
 	'footer' => 'Bas de page',
 ) );
+
+function chapelle_register_assets() {
+
+	wp_enqueue_style( 
+	  'chapelle', 
+	  get_template_directory_uri() . '/dist/css/main.css',
+	  array(), 
+	  '1.0'
+	);
+  
+	wp_enqueue_script( 
+	  'chapelle', 
+	  get_template_directory_uri() . '/dist/js/script.js', 
+	  array(), 
+	  '1.0', 
+	  true
+	);
+  }
+  
+  
+  add_action( 'wp_enqueue_scripts', 'chapelle_register_assets' );
