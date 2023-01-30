@@ -1,7 +1,9 @@
 //fondations
 @import "fundations/_variables.scss";
+@import "fundations/_fonctions.scss";
 
 //atomes
 @import "atoms/_textes.scss";
 
 //composants
+@import "components/_menu.scss";
