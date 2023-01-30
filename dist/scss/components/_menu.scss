@@ -1,8 +1,7 @@
 .header{
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    padding:0 toRem(30);
+    justify-content: space-around;
 
     .custom-logo
     {
@@ -28,6 +27,7 @@
             background-color: white;
             box-shadow: 0px 0px toRem(10) $textColor;
             position:absolute;
+            display:none;
 
             li{
                 font-size:toRem(14);
