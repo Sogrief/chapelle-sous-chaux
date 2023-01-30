@@ -11,6 +11,12 @@ register_nav_menus( array(
 	'footer' => 'Bas de page',
 ) );
 
+function chapelle_setup(){
+	add_theme_support( 'custom-logo' );
+}
+  
+  add_action( 'after_setup_theme', 'chapelle_setup' );
+
 function chapelle_register_assets() {
 
 	wp_enqueue_style( 
