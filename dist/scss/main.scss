@@ -1,3 +1,7 @@
-body{
-    background-color: red;
-}
+//fondations
+@import "fundations/_variables.scss";
+
+//atomes
+@import "atoms/_textes.scss";
+
+//composants
