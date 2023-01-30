@@ -33,10 +33,10 @@ h1 {
   justify-content: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
+  font-family: monserratMedium;
 }
 .header .site__header__menu .menu-item {
-  font-family: aganeLight;
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   list-style: none;
 }
 .header .site__header__menu .menu-item a {
@@ -48,8 +48,7 @@ h1 {
   position: absolute;
 }
 .header .site__header__menu .sub-menu li {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
   padding: 0.9375rem 0.625rem;
   border: 1px solid #e8e8e8;
 }
