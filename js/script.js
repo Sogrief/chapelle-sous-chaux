@@ -28,6 +28,7 @@ function checkScreenWidth() {
                 for(i=0;i<rubriques.length;i++){
                     rubriques[i].getElementsByTagName("a")[0].style.width="100vw";
                     rubriques[i].style.display="block";
+                    rubriques[i].style.border="1px solid #e8e8e8";
                 }
             }
 
@@ -47,6 +48,7 @@ function checkScreenWidth() {
     else{
         for(i=0;i<rubriques.length;i++){
             rubriques[i].style.display="block";
+            rubriques[i].style.border="none";
             rubriques[i].getElementsByTagName("a")[0].style.width="unset";
         }
     }

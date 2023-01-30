@@ -2,6 +2,7 @@
     display:flex;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
 
     .custom-logo
     {
@@ -17,9 +18,12 @@
         .menu-item{
             font-size:toRem(20);
             list-style: none;
+            background-color: white;
+            padding:toRem(10) 0;
 
             a{
                 color:$textColor;
+                text-decoration: none;
                 display:inline-block;
             }
         }
@@ -35,7 +39,7 @@
 
                 a{
                     font-size:toRem(14);
-                    padding:toRem(15) toRem(10);
+                    padding:0 toRem(10);
                     color:$rouge;
                     text-decoration:none;
                 }
