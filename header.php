@@ -14,7 +14,7 @@
         if(has_custom_logo())
         {?>
             <a href="<?php echo home_url( '/' ); ?>"><!--home_url fait un retour à l'accueil au clic-->
-            <img src="<?php $custom_logo_id = get_theme_mod( 'custom_logo' ); $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); $image_url = $image[0]; echo $image_url; ?>" alt="logo">
+                <img class="custom-logo" src="<?php $custom_logo_id = get_theme_mod( 'custom_logo' ); $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); $image_url = $image[0]; echo $image_url; ?>" alt="logo">
             </a>  
         <?php }
         

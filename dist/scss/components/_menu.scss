@@ -1,11 +1,18 @@
 .header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 toRem(30);
+
+    .custom-logo
+    {
+        width:toRem(200);
+    }
 
     .site__header__menu{
-        background-color: $vertFonce;
         display:flex;
         justify-content:center;
         column-gap:50px;
-
         font-family: monserratMedium;
 
         .menu-item{

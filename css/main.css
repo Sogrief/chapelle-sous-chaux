@@ -27,8 +27,16 @@ h1 {
   font-family: aganeExtraBold;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.875rem;
+}
+.header .custom-logo {
+  width: 12.5rem;
+}
 .header .site__header__menu {
-  background-color: #9bc1bc;
   display: flex;
   justify-content: center;
   -moz-column-gap: 50px;

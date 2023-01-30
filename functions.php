@@ -15,7 +15,7 @@ function chapelle_setup(){
 	add_theme_support( 'custom-logo' );
 }
   
-  add_action( 'after_setup_theme', 'chapelle_setup' );
+add_action( 'after_setup_theme', 'chapelle_setup' );
 
 function chapelle_register_assets() {
 
