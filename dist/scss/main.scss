@@ -1,12 +1,15 @@
 //fondations
 @import "fundations/_variables.scss";
 @import "fundations/_fonctions.scss";
+@import "fundations/_mixins.scss";
 
 //atomes
 @import "atoms/_textes.scss";
 
 //composants
 @import "components/_menu.scss";
+@import "components/_bandeau.scss";
+@import "components/_actu.scss";
 
 *{
     box-sizing:border-box;

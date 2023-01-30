@@ -22,8 +22,7 @@
   src: url("../dist/sources/fonts/monserrat-medium.ttf");
   font-family: monserratMedium;
 }
-h1 {
-  background-color: #555358;
+h1, h2, h3 {
   font-family: aganeExtraBold;
 }
 
@@ -102,6 +101,40 @@ h1 {
     display: none;
   }
 }
+.bandeau.-accueil {
+  height: 100vh;
+}
+.bandeau.-accueil h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6.25rem;
+  padding: 0 20vw;
+  line-height: 12.5rem;
+}
+.bandeau.-accueil h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.3125rem;
+}
+.bandeau.-accueil img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bandeau img {
+  position: absolute;
+  z-index: -2;
+}
+
+.actualite {
+  display: flex;
+  flex-direction: column;
+  font-family: aganeLight;
+  font-size: 1rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
