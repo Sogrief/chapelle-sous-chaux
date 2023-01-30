@@ -44,6 +44,7 @@ h2 {
   border-radius: 0.1875rem;
   padding: 0.625rem;
   font-family: monserratMedium;
+  color: white;
 }
 .wp-block-button a {
   text-decoration: none;
@@ -230,20 +231,45 @@ h2 {
 }
 .services {
   background-color: #e6ebe0;
+  padding: 0.625rem;
 }
 .services__section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 18.75rem);
+  grid-row-gap: 1.5625rem;
+  grid-column-gap: 3.75rem;
+  justify-content: center;
+  padding-bottom: 3.125rem;
+}
+.services__section a {
+  text-decoration: none;
 }
 .services__section__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
+  padding: 1.875rem;
   width: 18.75rem;
   height: 12.5rem;
+  justify-content: center;
   background-color: white;
+}
+.services__section__item h3 {
+  text-align: center;
 }
 .services__section__item img {
   width: 4.6875rem;
+  margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .services__section {
+    grid-template-columns: repeat(1, 18.75rem);
+  }
+  .services__section__item img {
+    width: 4.6875rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,17 +1,51 @@
 .services{
     background-color: $vertClair;
+    padding:toRem(10);
 
     &__section{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, toRem(300));
+        grid-row-gap: toRem(25);
+        grid-column-gap: toRem(60);
+        justify-content: center;
+        padding-bottom:toRem(50);
+
+        a{
+            text-decoration: none;
+        }
         
         &__item{
+            display: flex;
+            flex-direction: column;
+            row-gap: toRem(15);
+            padding:toRem(30);
             width:toRem(300);
             height:toRem(200);
+            justify-content: center;
             background-color: white;
+
+            h3{
+                text-align: center;
+            }
     
             img{
                 width:toRem(75);
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-up")) {
+    .services{
+    
+        &__section{
+            grid-template-columns: repeat(1, toRem(300));
+            
+            &__item{
+                img{
+                    width:toRem(75);
+                }
             }
         }
     }

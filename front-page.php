@@ -43,5 +43,7 @@ endif;
 <h2>agenda</h2>
 
 <?php get_template_part( 'template-parts/services'); ?>
+
+<?php the_content(); ?>
 	
 <?php get_footer(); ?>
