@@ -26,6 +26,11 @@
                     ) 
             ); 
         ?>
+
+        <a class='iconHamburger'>
+            <img src='<?php echo get_template_directory_uri(); ?>/dist/sources/icones/menuHamburger.svg'>
+            <img src='<?php echo get_template_directory_uri(); ?>/dist/sources/icones/cross.svg'>
+        </a>
         
     </header>
     
