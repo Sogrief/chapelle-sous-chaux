@@ -20,6 +20,7 @@
 
             a{
                 color:$textColor;
+                display:inline-block;
             }
         }
 
@@ -30,11 +31,11 @@
             display:none;
 
             li{
-                font-size:toRem(14);
-                padding:toRem(15) toRem(10);
                 border:1px solid #e8e8e8;
 
                 a{
+                    font-size:toRem(14);
+                    padding:toRem(15) toRem(10);
                     color:$rouge;
                     text-decoration:none;
                 }

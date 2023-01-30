@@ -46,7 +46,7 @@ function checkScreenWidth() {
 
     else{
         for(i=0;i<rubriques.length;i++){
-            rubriques[i].style.display="unset";
+            rubriques[i].style.display="block";
             rubriques[i].getElementsByTagName("a")[0].style.width="unset";
         }
     }

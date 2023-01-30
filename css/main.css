@@ -48,6 +48,7 @@ h1 {
 }
 .header .site__header__menu .menu-item a {
   color: #555358;
+  display: inline-block;
 }
 .header .site__header__menu .sub-menu {
   background-color: white;
@@ -56,11 +57,11 @@ h1 {
   display: none;
 }
 .header .site__header__menu .sub-menu li {
-  font-size: 0.875rem;
-  padding: 0.9375rem 0.625rem;
   border: 1px solid #e8e8e8;
 }
 .header .site__header__menu .sub-menu li a {
+  font-size: 0.875rem;
+  padding: 0.9375rem 0.625rem;
   color: #f52946;
   text-decoration: none;
 }
