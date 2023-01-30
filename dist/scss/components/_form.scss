@@ -1,0 +1,27 @@
+.wpcf7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label{
+        @include texte();
+    }
+
+    input{
+        padding:toRem(10) 0;
+    }
+
+    textarea{
+        resize:none;
+    }
+
+    input, textarea{
+        background-color: $grisClair;
+        border:none;
+        border-radius: toRem(5);
+        width:50vw;
+    }
+
+    @include bouton();
+}

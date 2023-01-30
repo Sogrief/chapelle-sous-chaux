@@ -270,6 +270,45 @@ h2 {
     width: 4.6875rem;
   }
 }
+.wpcf7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wpcf7 label {
+  font-family: aganeLight;
+  font-size: 1rem;
+}
+.wpcf7 input {
+  padding: 0.625rem 0;
+}
+.wpcf7 textarea {
+  resize: none;
+}
+.wpcf7 input, .wpcf7 textarea {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 0.3125rem;
+  width: 50vw;
+}
+.wpcf7 .wp-block-button {
+  background-color: #ed6a5a;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 0.625rem;
+  font-family: monserratMedium;
+  color: white;
+}
+.wpcf7 .wp-block-button a {
+  text-decoration: none;
+  color: white;
+}
+.wpcf7 .wp-block-button:hover {
+  background-color: #9bc1bc;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
