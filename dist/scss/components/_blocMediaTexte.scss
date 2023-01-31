@@ -1,0 +1,64 @@
+.wp-block-media-text, .wp-block-media-text__content {
+    padding:0 !important;//supprimme le padding du bloc wordpress
+}
+
+.wp-block-media-text{
+    width:75vw;
+    display:flex;
+    flex-wrap:wrap;
+    margin:toRem(50) auto;
+    align-items:center;
+    column-gap: 3vw;
+
+    &__content{
+        @include texte;
+
+        p{
+            width:34.5vw;
+            text-align:justify;
+            padding:toRem(30) 0;
+        }
+    }
+
+    &__media{
+        img{
+            width:34.5vw;
+            height:auto;
+        } 
+    }
+}
+
+.wp-block-image img
+{
+    width:30vw;   
+    margin:toRem(20) auto;
+    object-fit: cover;
+}
+
+.wp-element-caption{
+    padding-bottom:toRem(12);
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-down")) {
+    .wp-block-media-text{
+        width:50vw;
+    
+        &__content{
+    
+            p{
+                width:50vw;
+            }
+        }
+    
+        &__media{
+            img{
+                width:50vw;
+            } 
+        }
+    }
+
+    .wp-block-image img
+    {
+        width:50vw;   
+    }
+}
