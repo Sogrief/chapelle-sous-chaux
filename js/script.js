@@ -98,6 +98,7 @@ if(deroulantsLength!=0){//s'il y a au moins un déroulant dans la page
                 close.style.display="block";
                 open.style.display="none";
                 ouvert=true;
+                this.style.color="#9bc1bc";
             }
 
             else if(ouvert==true){
@@ -106,6 +107,7 @@ if(deroulantsLength!=0){//s'il y a au moins un déroulant dans la page
                 open.style.display="block";
                 close.style.display="none";
                 ouvert=false;
+                this.style.color="#ed6a5a";
             }
         });
     }

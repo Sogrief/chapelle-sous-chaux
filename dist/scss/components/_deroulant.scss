@@ -34,7 +34,7 @@
             }
 
             &__subContent{
-                padding: toRem(10);
+                padding: toRem(30) toRem(50);
                 @include texte;
                 position:absolute;
                 visibility: hidden;
@@ -54,6 +54,10 @@
         
             &__item{
                 width:70vw;
+
+                &__subContent{
+                    padding: toRem(30) toRem(30);
+                }
             }
         }
     }
