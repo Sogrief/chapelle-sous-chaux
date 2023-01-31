@@ -45,5 +45,7 @@ endif;
 <?php get_template_part( 'template-parts/services'); ?>
 
 <?php the_content(); ?>
+
+<?php the_field("_localisationMairie"); ?>
 	
 <?php get_footer(); ?>
