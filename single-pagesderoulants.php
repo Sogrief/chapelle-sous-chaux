@@ -5,65 +5,63 @@
 <?php the_content(); ?>
 
 <div class="deroulants">
-    <div class="deroulants__item">
-        <div class="deroulants__item__headband">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-            titre déroulant 1
+    <div class="deroulants__column">
+        <div class="deroulants__column__item">
+            <div class="deroulants__column__item__headband">
+                <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
+                <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
+                <div class="texteTitre">texte</div>
+            </div>
+            <div class="deroulants__column__item__subContent">
+                <div class="texte">
+                    col1
+                </div>
+            </div>
         </div>
-        <div class="deroulants__item__subContent">
-            <div class="texte">
-            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire 
-            pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou 
-            que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou 
+
+        <div class="deroulants__column__item">
+            <div class="deroulants__column__item__headband">
+                <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
+                <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
+                <div class="texteTitre">texte</div>
+            </div>
+            <div class="deroulants__column__item__subContent">
+                <div class="texte">
+                    col1
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="deroulants__item">
-        <div class="deroulants__item__headband">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-            titre déroulant 2
-        </div>
-        <div class="deroulants__item__subContent">
-            <div class="texte">
-            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire 
-            pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou 
-            que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou 
+    <div class="deroulants__column">
+        <div class="deroulants__column__item">
+            <div class="deroulants__column__item__headband">
+                <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
+                <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
+                <div class="texteTitre">texte</div>
+            </div>
+            <div class="deroulants__column__item__subContent">
+                <div class="texte">
+                    texte yeah j'ai trop de flow lèche moi la bite texte lêché pêche dans ton nombril
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="deroulants__item">
-        <div class="deroulants__item__headband">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-            titre déroulant 3
-        </div>
-        <div class="deroulants__item__subContent">
-            <div class="texte">
-            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire 
-            pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou 
-            que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou 
+        <div class="deroulants__column__item">
+            <div class="deroulants__column__item__headband">
+                <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
+                <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
+                <div class="texteTitre">texte</div>
             </div>
-        </div>
-    </div>
-    
-    <div class="deroulants__item">
-        <div class="deroulants__item__headband">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-            titre déroulant 4
-        </div>
-        <div class="deroulants__item__subContent">
-            <div class="texte">
-            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire 
-            pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou 
-            que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou 
+            <div class="deroulants__column__item__subContent">
+                <div class="texte">
+                    col2
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <?php get_footer(); ?>

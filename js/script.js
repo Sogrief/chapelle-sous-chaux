@@ -82,3 +82,33 @@ for(i=0;i<rubriquesDeroulantes.length;i++)
 
 let deroulants=document.getElementsByClassName("deroulants__column__item__headband");
 let deroulantsLength=deroulants.length;
+
+if(deroulantsLength!=0){//s'il y a au moins un déroulant dans la page
+    for(i=0;i<deroulantsLength;i++){
+        let ouvert=false;
+
+        deroulants[i].addEventListener("click", function(){
+            let subContent=this.parentNode.getElementsByClassName("deroulants__column__item__subContent")[0];
+            let open=this.getElementsByClassName("deroulants__column__item__headband__open")[0];
+            let close=this.getElementsByClassName("deroulants__column__item__headband__close")[0];
+
+            if(ouvert==false){
+                subContent.style.visibility="visible";
+                subContent.style.position="static";//remet l'élément dans le flux
+                close.style.display="block";
+                open.style.display="none";
+                ouvert=true;
+            }
+
+            else if(ouvert==true){
+                subContent.style.visibility="hidden";
+                subContent.style.position="absolute";//remet l'élément hors du flux
+                open.style.display="block";
+                close.style.display="none";
+                ouvert=false;
+            }
+        });
+    }
+}
+
+
