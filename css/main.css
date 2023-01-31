@@ -598,6 +598,29 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
     width: 50vw;
   }
 }
+.pdfemb-viewer {
+  width: 34.5vw !important;
+  float: left !important;
+}
+.pdfemb-viewer .pdfemb-pagescontainer {
+  height: unset !important;
+  width: 34.5vw !important;
+}
+.pdfemb-viewer .pdfemb-pagescontainer .pdfemb-inner-div {
+  height: unset !important;
+  width: 34.5vw !important;
+}
+.pdfemb-viewer canvas {
+  width: 34.5vw !important;
+  height: auto !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.wp-block-pdfemb-pdf-embedder-viewer {
+  display: none !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

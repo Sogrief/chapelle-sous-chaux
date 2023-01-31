@@ -1,0 +1,25 @@
+.pdfemb-viewer
+{
+    width:34.5vw !important;
+    float: left !important;
+
+    .pdfemb-pagescontainer{
+        height: unset !important;
+        width:34.5vw !important;
+
+        .pdfemb-inner-div {
+            height: unset !important;
+            width:34.5vw !important;
+        }
+    }
+
+    canvas{
+        width:34.5vw  !important;
+        height:auto !important;
+        object-fit: cover !important;
+    }
+}
+
+.wp-block-pdfemb-pdf-embedder-viewer{
+    display: none !important;
+}
