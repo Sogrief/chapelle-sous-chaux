@@ -3,6 +3,10 @@ h1,h2,h3{
     color:$textColor;
 }
 
+h3{
+    margin: toRem(50) 0;
+}
+
 h1{
     text-transform: uppercase;
     text-align: center;
