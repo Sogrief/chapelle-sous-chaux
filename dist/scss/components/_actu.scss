@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     @include texte();
+
+    .wp-block-image{
+        margin: auto;
+    }
 }
 
 .actusAccueil{

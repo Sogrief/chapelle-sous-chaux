@@ -29,6 +29,7 @@ h1, h2, h3 {
 
 h1 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .titreH1.-blanc {
@@ -45,9 +46,10 @@ h2 {
   font-size: 1.875rem;
 }
 
-p, ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
+p, ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
   font-family: aganeLight;
   font-size: 1rem;
+  color: #555358;
 }
 
 p, p[class*=has-text-align-right], p[class*=has-text-align-center], p[class*=has-text-align-left] {
@@ -62,14 +64,14 @@ p[class*=has-text-align-center] {
   text-align: center;
 }
 
-ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
-  width: 50vw;
+ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
+  width: 40vw;
   margin: auto;
 }
 
 @media screen and (max-width: 768px) {
-  ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
-    width: 75vw;
+  ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
+    width: 40vw;
   }
 }
 .wp-block-button {
@@ -231,6 +233,9 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   flex-direction: column;
   font-family: aganeLight;
   font-size: 1rem;
+}
+.actualite .wp-block-image {
+  margin: auto;
 }
 
 .actusAccueil {
@@ -401,6 +406,7 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   justify-content: space-around;
   width: 100%;
   padding: 1.25rem 0;
+  margin-top: 12.5rem;
 }
 .piedDePage__copyright {
   font-family: aganeLight;

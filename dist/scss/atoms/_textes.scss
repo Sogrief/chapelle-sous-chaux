@@ -5,6 +5,7 @@ h1,h2,h3{
 
 h1{
     text-transform: uppercase;
+    text-align: center;
 }
 
 .titreH1{
@@ -24,9 +25,10 @@ h2{
     font-size: toRem(30);
 }
 
-p, ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu)
+p, ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu),ol
 {
     @include texte();
+    color: $textColor;
 }
 
 p, p[class*="has-text-align-right"], p[class*="has-text-align-center"], p[class*="has-text-align-left"]
@@ -42,13 +44,13 @@ p[class*="has-text-align-center"]
     text-align: center;
 }
 
-ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu){
-    width:50vw;
+ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu),ol{
+    width:40vw;
     margin:auto;
 }
 
 @media screen and (max-width: map-get($breakpoints, "tablet-up")) {
-    ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu){
-        width:75vw;
+    ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu),ol{
+        width:40vw;
     }
 }

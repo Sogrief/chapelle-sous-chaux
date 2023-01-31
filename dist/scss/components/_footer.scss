@@ -5,6 +5,7 @@
     justify-content: space-around;
     width:100%;
     padding:toRem(20) 0;
+    margin-top:toRem(200);
 
     &__copyright{
         @include texte();
