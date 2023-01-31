@@ -6,59 +6,64 @@
 
 <div class="deroulants">
     <div class="deroulants__column">
-        <div class="deroulants__column__item">
-            <div class="deroulants__column__item__headband">
-                <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
-                <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-                <div class="texteTitre">texte</div>
-            </div>
-            <div class="deroulants__column__item__subContent">
-                <div class="texte">
-                    col1
-                </div>
-            </div>
-        </div>
+
+    <?php
+    if( have_rows('_deroulants') ):
+        while( have_rows('_deroulants') ): the_row();
+
+        $index = get_row_index();
+
+        if($index % 2!=0){ ?>
 
         <div class="deroulants__column__item">
             <div class="deroulants__column__item__headband">
                 <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
                 <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-                <div class="texteTitre">texte</div>
+                <div class="texteTitre"><?php the_sub_field("_titreDeroulant"); ?></div>
             </div>
             <div class="deroulants__column__item__subContent">
                 <div class="texte">
-                    col1
+                    <?php the_sub_field('_contenuDeroulant'); ?>
                 </div>
             </div>
         </div>
+
+        <?php
+            }
+        endwhile;
+    endif;
+    ?>
     </div>
 
     <div class="deroulants__column">
-        <div class="deroulants__column__item">
-            <div class="deroulants__column__item__headband">
-                <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
-                <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-                <div class="texteTitre">texte</div>
-            </div>
-            <div class="deroulants__column__item__subContent">
-                <div class="texte">
-                    texte yeah j'ai trop de flow lèche moi la bite texte lêché pêche dans ton nombril
-                </div>
-            </div>
-        </div>
+    <?php
+    if( have_rows('_deroulants') ):
+        while( have_rows('_deroulants') ): the_row();
+
+        $index = get_row_index();
+
+        if($index % 2==0){ ?>
 
         <div class="deroulants__column__item">
             <div class="deroulants__column__item__headband">
                 <img class="deroulants__column__item__headband__open" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/redCross.svg">
                 <img class="deroulants__column__item__headband__close" src="<?php echo get_template_directory_uri(); ?>/dist/sources/icones/reduce.svg">
-                <div class="texteTitre">texte</div>
+                <div class="texteTitre"><?php the_sub_field("_titreDeroulant"); ?></div>
             </div>
             <div class="deroulants__column__item__subContent">
                 <div class="texte">
-                    col2
+                    <?php the_sub_field('_contenuDeroulant'); ?>
                 </div>
             </div>
         </div>
+
+        <?php
+            }
+        endwhile;
+    endif;
+    ?>
+
+        
     </div>
 </div>
 

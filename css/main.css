@@ -405,33 +405,6 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   display: flex;
   flex-direction: column;
   row-gap: 0.9375rem;
-  /*&__item{
-      box-shadow: 0px 0px toRem(10) $grisClair;
-      display: flex;
-      flex-direction: column;
-
-      &__headband{    
-          display: flex;
-          align-items: center;
-          padding: toRem(10);
-          background-color: $vertClair;
-          font-family: monserratMedium;
-          color:$rougeOrange;
-          font-size: toRem(14);
-          cursor: pointer;
-
-          &__close{
-              display: none;
-          }
-      }
-
-      &__subContent{
-          padding: toRem(10);
-          @include texte;
-          position:absolute;
-          visibility: hidden;
-      }
-  }*/
 }
 .deroulants__column__item {
   width: 39vw;
@@ -439,7 +412,9 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
 .deroulants__column__item__headband {
   display: flex;
   align-items: center;
-  padding: 0.625rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  padding: 0.9375rem 0.625rem;
   background-color: #e6ebe0;
   font-family: monserratMedium;
   color: #ed6a5a;
@@ -449,6 +424,9 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
 .deroulants__column__item__headband__close {
   display: none;
 }
+.deroulants__column__item__headband__close, .deroulants__column__item__headband__open {
+  width: 1rem;
+}
 .deroulants__column__item__subContent {
   padding: 0.625rem;
   font-family: aganeLight;
@@ -457,7 +435,15 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   visibility: hidden;
   box-shadow: 0px 0px 0.625rem #e8e8e8;
 }
+.deroulants__column__item__subContent p {
+  width: auto;
+}
 
+@media screen and (max-width: 992px) {
+  .deroulants__column__item {
+    width: 70vw;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
