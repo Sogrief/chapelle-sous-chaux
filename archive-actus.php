@@ -1,6 +1,19 @@
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-parts/bandeau'); ?>
+<?php
+    if ( has_post_thumbnail() ) { ?>
+
+<div class="bandeau -base">
+        <?php the_post_thumbnail() ?>
+        <div class="titreBandeau"> 
+                <h1 class="titreH1 -blanc">actualités</h1>
+        </div>
+</div>
+
+<?php }
+else {?>
+        <h1 class="titreH1 -noir">actualités</h1>
+<?php } ?>
 
 <div class="contenuActus"><?php the_field( '_actusContent','infos' ); ?></div>
 

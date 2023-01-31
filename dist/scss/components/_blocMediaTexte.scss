@@ -45,6 +45,11 @@
     @include texte();
 }
 
+.leaflet-map {
+    z-index: 0;
+}
+
+
 @media screen and (max-width: map-get($breakpoints, "tablet-down")) {
     .wp-block-media-text{
         width:50vw;

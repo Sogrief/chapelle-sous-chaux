@@ -4,6 +4,11 @@
     justify-content: space-around;
     background-color: white;
     padding:toRem(10) 0;
+    position: fixed;
+    top:0;
+    width:100%;
+    box-shadow: 0px 0px toRem(10) $grisClair;
+    z-index: 6;
 
     .searchForm{
         #search{
@@ -24,7 +29,7 @@
         font-family: monserratMedium;
 
         .menu-item{
-            font-size:toRem(20);
+            font-size:toRem(16);
             list-style: none;
             background-color: white;
             padding:toRem(10) 0;

@@ -108,6 +108,11 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
   justify-content: space-around;
   background-color: white;
   padding: 0.625rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 0.625rem #e8e8e8;
+  z-index: 6;
 }
 .header .searchForm #search {
   padding: 0.375rem 0;
@@ -124,7 +129,7 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
   font-family: monserratMedium;
 }
 .header .site__header__menu .menu-item {
-  font-size: 1.25rem;
+  font-size: 1rem;
   list-style: none;
   background-color: white;
   padding: 0.625rem 0;
@@ -181,6 +186,9 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
   .iconHamburger {
     display: none;
   }
+}
+.bandeau {
+  margin-top: 4.1875rem;
 }
 .bandeau.-accueil {
   height: 100vh;
@@ -591,6 +599,10 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
   margin-top: 25vh;
   font-family: aganeLight;
   font-size: 1rem;
+}
+
+.leaflet-map {
+  z-index: 0;
 }
 
 @media screen and (max-width: 992px) {
