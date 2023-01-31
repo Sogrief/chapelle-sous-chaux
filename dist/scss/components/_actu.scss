@@ -41,6 +41,10 @@
     }
 }
 
+.contenuActus{
+    margin-bottom:toRem(50);
+}
+
 @media screen and (max-width: map-get($breakpoints, "tablet-down")) {
     .actusAccueil{
     

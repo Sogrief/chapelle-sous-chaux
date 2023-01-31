@@ -269,6 +269,10 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   font-size: 1rem;
 }
 
+.contenuActus {
+  margin-bottom: 3.125rem;
+}
+
 @media screen and (max-width: 992px) {
   .actusAccueil__item {
     width: 39vw;
