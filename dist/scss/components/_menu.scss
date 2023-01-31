@@ -5,6 +5,13 @@
     background-color: white;
     padding:toRem(10) 0;
 
+    .searchForm{
+        #search{
+            padding:toRem(6) 0;
+            border:1px solid $textColor;
+        }
+    }
+
     .custom-logo
     {
         width:toRem(175);

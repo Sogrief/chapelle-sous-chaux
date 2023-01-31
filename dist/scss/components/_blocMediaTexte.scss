@@ -9,6 +9,7 @@
     margin:toRem(50) auto;
     align-items:center;
     column-gap: 3vw;
+    @include texte;
 
     &__content{
         @include texte;
@@ -37,6 +38,11 @@
 
 .wp-element-caption{
     padding-bottom:toRem(12);
+}
+
+.searchTitle{
+    margin-top:25vh;
+    @include texte();
 }
 
 @media screen and (max-width: map-get($breakpoints, "tablet-down")) {
