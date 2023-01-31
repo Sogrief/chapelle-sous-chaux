@@ -1,27 +1,64 @@
 .wpcf7{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    label{
-        @include texte();
-    }
+    .wpcf7-form{
+        display: flex;
+        flex-direction: column;
 
-    input{
-        padding:toRem(10) 0;
-    }
+        .wpcf7-response-output{
+            text-align: center;
+            font-family: aganeBold;
+            font-size: toRem(16);
+        }
 
-    textarea{
-        resize:none;
-    }
+        label{
+            @include texte();
+        }
+    
+        input{
+            padding:toRem(10) 0;
+        }
+    
+        textarea{
+            resize:none;
+        }
+    
+        input, textarea{
+            background-color: $grisClair;
+            border:none;
+            border-radius: toRem(5);
+            width:50vw;
+        }
+        p{
+            display: flex;
+            justify-content: center;
 
-    input, textarea{
-        background-color: $grisClair;
-        border:none;
-        border-radius: toRem(5);
-        width:50vw;
-    }
+            .wpcf7-spinner{
+                position: absolute;
+                margin-top:toRem(50);
+            }
 
-    @include bouton();
+            .wp-block-button{
+                background-color: $rougeOrange;
+                border:none;
+                border-radius:toRem(3);
+                padding:toRem(10);
+                font-family: monserratMedium;
+                color:white;
+            
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+            
+                &:hover{
+                    background-color: $vertFonce;
+                    cursor: pointer;
+                }
+                width: auto;
+            }
+        }
+    }
 }
