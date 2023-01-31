@@ -10,7 +10,8 @@
     justify-content: center;
     border-radius: toRem(5);
     column-gap: 3vw;
-    row-gap: toRem(90);
+    row-gap: toRem(60);
+    margin-bottom: toRem(100);
 
     &__item{
         display: flex;
@@ -31,9 +32,9 @@
             flex-direction: column;
             align-items:center;
             row-gap: toRem(12);
-
             padding:toRem(30);
-            p{
+            
+            &__extrait{
                 @include texte();
             }
         }

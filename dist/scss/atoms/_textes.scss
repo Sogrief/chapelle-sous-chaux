@@ -13,3 +13,32 @@ h2{
     font-family: aganeSemiBold;
     font-size: toRem(30);
 }
+
+p, ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu)
+{
+    @include texte();
+}
+
+p, p[class*="has-text-align-right"], p[class*="has-text-align-center"], p[class*="has-text-align-left"]
+{
+    @include texte();
+    width:50vw;
+    margin:toRem(10) auto;
+    text-align: justify;
+}
+
+p[class*="has-text-align-center"]
+{
+    text-align: center;
+}
+
+ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu){
+    width:50vw;
+    margin:auto;
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-up")) {
+    ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu){
+        width:75vw;
+    }
+}

@@ -9,7 +9,14 @@
                 <a href="<?php the_sub_field("_urlLien"); ?>" target="_blank">
                     <div class="services__section__item">
                         <img src="<?php $icone = get_sub_field( '_iconeLien' ); echo $icone['url']; ?>">
-                        <h3><?php the_sub_field("_titreLien"); ?></h3>
+
+                        <?php if (get_sub_field("_titreLien")){ ?>
+                            <h3><?php the_sub_field("_titreLien"); ?></h3>
+                        <?php } ?>
+
+                        <?php if (get_sub_field("_description")){ ?>
+                            <div class="services__section__item__description"><?php the_sub_field("_description"); ?></div>
+                        <?php } ?>
                     </div>
                 </a>
 

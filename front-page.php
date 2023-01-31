@@ -25,7 +25,7 @@ if ( $actus->have_posts() ) :
 
 		<div class="actusAccueil__item__content">
 			<h3><?php the_title(); ?></h3>
-			<p><?php the_excerpt(); ?></p>
+			<div class="actusAccueil__item__content__extrait"><?php echo(strip_tags(get_the_excerpt())); ?></div>
 
 			<button class="wp-block-button">
 				<a href="<?php the_permalink(); ?>" class="post__link">lire la suite</a>
@@ -39,8 +39,6 @@ endif;
 ?>
 
 </div>
-
-<h2>agenda</h2>
 
 <?php get_template_part( 'template-parts/services'); ?>
 

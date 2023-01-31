@@ -38,17 +38,46 @@ h2 {
   font-size: 1.875rem;
 }
 
+p, ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
+  font-family: aganeLight;
+  font-size: 1rem;
+}
+
+p, p[class*=has-text-align-right], p[class*=has-text-align-center], p[class*=has-text-align-left] {
+  font-family: aganeLight;
+  font-size: 1rem;
+  width: 50vw;
+  margin: 0.625rem auto;
+  text-align: justify;
+}
+
+p[class*=has-text-align-center] {
+  text-align: center;
+}
+
+ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
+  width: 50vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
+    width: 75vw;
+  }
+}
 .wp-block-button {
   background-color: #ed6a5a;
   border: none;
   border-radius: 0.1875rem;
   padding: 0.625rem;
+  margin: 1.875rem 0 !important;
   font-family: monserratMedium;
   color: white;
 }
 .wp-block-button a {
   text-decoration: none;
   color: white;
+  background-color: unset;
 }
 .wp-block-button:hover {
   background-color: #9bc1bc;
@@ -183,7 +212,8 @@ h2 {
   border-radius: 0.3125rem;
   -moz-column-gap: 3vw;
        column-gap: 3vw;
-  row-gap: 5.625rem;
+  row-gap: 3.75rem;
+  margin-bottom: 6.25rem;
 }
 .actusAccueil__item {
   display: flex;
@@ -206,7 +236,7 @@ h2 {
   row-gap: 0.75rem;
   padding: 1.875rem;
 }
-.actusAccueil__item__content p {
+.actusAccueil__item__content__extrait {
   font-family: aganeLight;
   font-size: 1rem;
 }
@@ -261,6 +291,11 @@ h2 {
   width: 4.6875rem;
   margin: auto;
 }
+.services__section__item__description {
+  font-family: aganeLight;
+  font-size: 1rem;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   .services__section {
@@ -274,6 +309,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4.375rem 0;
 }
 .wpcf7 .wpcf7-form {
   display: flex;

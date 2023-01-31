@@ -32,6 +32,11 @@
                 width:toRem(75);
                 margin: auto;
             }
+
+            &__description{
+                @include texte();
+                text-align: center;
+            }
         }
     }
 }
