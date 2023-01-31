@@ -362,6 +362,22 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   cursor: pointer;
 }
 
+.piedDePage {
+  background-color: #678984;
+  display: flex;
+  justify-content: center;
+}
+.piedDePage .site__footer__menu {
+  list-style: none;
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.piedDePage .site__footer__menu li a {
+  text-decoration: none;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

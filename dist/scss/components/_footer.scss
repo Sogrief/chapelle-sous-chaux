@@ -1,0 +1,18 @@
+.piedDePage{
+    background-color: $vertDarker;
+    display:flex;
+    justify-content: center;
+
+    .site__footer__menu{
+        list-style: none;
+        display:flex;
+        column-gap: 50px;
+
+        li{
+            a{
+                text-decoration: none;
+                color:white;
+            }
+        }
+    }
+}

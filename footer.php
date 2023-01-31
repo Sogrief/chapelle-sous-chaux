@@ -4,6 +4,7 @@
         'container' => 'ul', 
         'menu_class' => 'site__footer__menu',    ) ); 
     ?>
+    
 </footer>
 
     <?php wp_footer(); ?>
