@@ -77,3 +77,8 @@ for(i=0;i<rubriquesDeroulantes.length;i++)
         this.getElementsByClassName("sub-menu")[0].style.display="none";
     });
 }
+
+/*-------------------------deroulants-------------------------*/
+
+let deroulants=document.getElementsByClassName("deroulants__column__item__headband");
+let deroulantsLength=deroulants.length;
