@@ -479,6 +479,17 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
     padding: 1.875rem 1.875rem;
   }
 }
+.evenements {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+.evenements__content {
+  display: flex;
+  row-gap: 50px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

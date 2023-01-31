@@ -1,0 +1,11 @@
+.evenements{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+    &__content{
+        display: flex;
+        row-gap: 50px;
+    }
+}
