@@ -3,9 +3,44 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    row-gap: toRem(30);
 
     &__content{
         display: flex;
-        row-gap: 50px;
+        flex-wrap: wrap;
+        column-gap:3vw;
+        row-gap: toRem(20);
+        margin-bottom:toRem(40);
+        @include texte();
+
+        img{
+            width: 30vw;
+            object-fit: cover;
+        }
+
+        &__texte{
+            width:30vw;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: map-get($breakpoints, "tablet-down")) {
+    .evenements{
+        h3{
+            text-align: center;
+        }
+        &__content{
+            justify-content: center;
+            img{
+                width: 50vw;
+                object-fit: cover;
+            }
+    
+            &__texte{
+                width:50vw;
+            }
+        }
     }
 }
