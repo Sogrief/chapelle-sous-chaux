@@ -365,9 +365,19 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
 .piedDePage {
   background-color: #678984;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   padding: 1.25rem 0;
+}
+.piedDePage__copyright {
+  font-family: aganeLight;
+  font-size: 1rem;
+  color: #e6ebe0;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.9375rem;
+  font-size: 0.75rem;
 }
 .piedDePage .site__footer__menu {
   display: flex;

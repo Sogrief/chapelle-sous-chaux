@@ -1,9 +1,19 @@
 .piedDePage{
     background-color: $vertDarker;
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width:100%;
     padding:toRem(20) 0;
+
+    &__copyright{
+        @include texte();
+        color:$vertClair;
+        width: 100%;
+        text-align: center;
+        margin-top:toRem(15);
+        font-size: toRem(12);
+    }
 
     .site__footer__menu{
         display:flex;

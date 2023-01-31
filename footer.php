@@ -4,6 +4,8 @@
         'container' => 'ul', 
         'menu_class' => 'site__footer__menu',    ) ); 
     ?>
+
+    <div class="piedDePage__copyright"><?php the_field( '_copyright','infos' ); ?><div>
     
 </footer>
 
