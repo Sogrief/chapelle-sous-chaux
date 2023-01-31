@@ -1,20 +1,30 @@
+.pdfemb-viewer:nth-of-type(2n)
+{
+    margin:toRem(40) 5vw toRem(40) 10vw !important;
+}
+
+.pdfemb-viewer:nth-of-type(2n+1)
+{
+    margin:toRem(40) 10vw toRem(40) 5vw !important;
+}
+
 .pdfemb-viewer
 {
-    width:34.5vw !important;
+    width:34vw !important;
     float: left !important;
 
     .pdfemb-pagescontainer{
         height: unset !important;
-        width:34.5vw !important;
+        width:34vw !important;
 
         .pdfemb-inner-div {
             height: unset !important;
-            width:34.5vw !important;
+            width:34vw !important;
         }
     }
 
     canvas{
-        width:34.5vw  !important;
+        width:34vw  !important;
         height:auto !important;
         object-fit: cover !important;
     }
@@ -22,4 +32,34 @@
 
 .wp-block-pdfemb-pdf-embedder-viewer{
     display: none !important;
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-down")) {
+
+    .pdfemb-viewer:nth-of-type(2n)
+    {
+        margin:toRem(40) 15vw toRem(40) 15vw !important;
+    }
+
+    .pdfemb-viewer:nth-of-type(2n+1)
+    {
+        margin:toRem(40) 15vw toRem(40) 15vw !important;
+    }
+
+    .pdfemb-viewer
+    {
+        width:70vw !important;
+
+        .pdfemb-pagescontainer{
+            width:70vw !important;
+
+            .pdfemb-inner-div {
+                width:70vw !important;
+            }
+        }
+
+        canvas{
+            width:70vw  !important;
+        }
+    }
 }
