@@ -1,2 +1,25 @@
-body{
+.deroulants{
+    display: grid;
+    grid-template-columns: repeat(2, 39vw);
+    grid-column-gap: 3vw;
+    grid-row-gap: toRem(25);
+    justify-content: center;
+
+    &__item{
+        background-color: $vertFonce;
+
+        &__headband{
+
+        }
+
+        &__subContent{
+            
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, "tablet-up")) {
+    .deroulants{
+        grid-template-columns: repeat(1, 50vw);
+    }
 }

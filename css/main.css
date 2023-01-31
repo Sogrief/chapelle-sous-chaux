@@ -392,6 +392,21 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu) {
   color: white;
 }
 
+.deroulants {
+  display: grid;
+  grid-template-columns: repeat(2, 39vw);
+  grid-column-gap: 3vw;
+  grid-row-gap: 1.5625rem;
+  justify-content: center;
+}
+.deroulants__item {
+  background-color: #9bc1bc;
+}
+@media screen and (max-width: 768px) {
+  .deroulants {
+    grid-template-columns: repeat(1, 50vw);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
