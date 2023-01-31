@@ -28,19 +28,24 @@
     }
 
     &.-base{
-        height:toRem(300);
+        height:toRem(200);
 
         img{
             width:100%;
-            height:toRem(300);
+            height:toRem(225);
             object-fit:cover;
         }
 
-        
-        h1{
-            text-align: center;
-            vertical-align:middle;
-            padding-top:toRem(120);
+        .titreBandeau{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+            h1{
+                display: inline-block;
+                background-color: rgba(25, 25, 25, 0.6);
+                padding:toRem(20);
+            }
         }
     }
 

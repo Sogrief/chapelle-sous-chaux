@@ -3,7 +3,9 @@
 
 <div class="bandeau -base">
         <?php the_post_thumbnail() ?>
-        <h1 class="titreH1 -blanc"><?php the_title(); ?></h1>
+        <div class="titreBandeau"> 
+                <h1 class="titreH1 -blanc"><?php the_title(); ?></h1>
+        </div>
 </div>
 
 <?php }
