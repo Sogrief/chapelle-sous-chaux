@@ -2,6 +2,8 @@
 
 <?php get_template_part( 'template-parts/bandeau'); ?>
 
+<h2>prochainement</h2>
+
 <div class="evenements">
 
 <?php if ( have_posts() ) :
@@ -16,7 +18,8 @@
         <?php the_post_thumbnail(); ?>
 
         <div class="evenements__content__texte">
-            <?php the_content(); ?>
+            <?php $text = preg_replace("/<\/?p[^>]*>/i", "", get_the_content());
+            echo $text;?>
         </div>
     </div>
         
