@@ -2,13 +2,23 @@
 
 <?php get_template_part( 'template-parts/bandeau'); ?>
 
+<div class="evenements">
 
 <?php if ( have_posts() ) :
     while ( have_posts() ) : the_post(); ?>
 
-        <?php the_post_thumbnail(); ?>
+    <h3>
         <?php the_title();?>
-        <?php the_content(); ?>
+    </h3>
+
+    <div class="evenements__content">
+
+        <?php the_post_thumbnail(); ?>
+
+        <div class="evenements__content__texte">
+            <?php the_content(); ?>
+        </div>
+    </div>
         
     <?php endwhile;
     endif; ?>
