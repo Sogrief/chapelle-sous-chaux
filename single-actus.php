@@ -14,4 +14,9 @@
 
 </article>
 
+<div class="is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons">
+    <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://chapellesouschau-zswba3v9xg.live-website.com/actus/">revenir aux actus</a></div>
+    </div>
+</div>
+
 <?php get_footer(); ?>

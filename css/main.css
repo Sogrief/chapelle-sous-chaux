@@ -258,6 +258,7 @@ ul:not(.sub-menu):not(.site__header__menu):not(.site__footer__menu), ol {
 }
 .actualite .wp-block-image {
   margin: auto;
+  margin-top: 6.25rem;
 }
 
 .actusAccueil {
