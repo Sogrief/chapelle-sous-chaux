@@ -11,6 +11,9 @@
     z-index: 6;
 
     .searchForm{
+        display: flex;
+        align-items: center;
+        column-gap: toRem(10);
         #search{
             padding:toRem(6) 0;
             border:1px solid $textColor;
